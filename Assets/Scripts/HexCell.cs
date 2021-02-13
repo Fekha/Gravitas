@@ -8,4 +8,8 @@ public class HexCell : MonoBehaviour {
 	public Color color;
 
 	public Sprite sprite;
+
+	public Ship Occupiedby;
+
+	public bool hasStar;
 }
