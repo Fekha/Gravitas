@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4241497959099414124}
-  - component: {fileID: 11422220}
   - component: {fileID: 7150767868148484211}
   - component: {fileID: 2708996396696205596}
+  - component: {fileID: -2440995646668306223}
   m_Layer: 0
   m_Name: Hex Cell
   m_TagString: Untagged
@@ -38,23 +38,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &11422220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3d3de04c7eaa4677adc5cb5e120ecef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coordinates:
-    x: 0
-    z: 0
-  color: {r: 0.5686275, g: 0.5686275, b: 0.5686275, a: 0}
-  sprite: {fileID: 0}
 --- !u!222 &7150767868148484211
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -113,3 +96,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-2440995646668306223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a77d839674fb2142966ef46dcf5194f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coordinates:
+    x: 0
+    y: 0
+  color: {r: 0, g: 0, b: 0, a: 0}
+  sprite: {fileID: 0}

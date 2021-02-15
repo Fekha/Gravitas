@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< Updated upstream
     <Compile Include="Assets\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\HexCell.cs" />
     <Compile Include="Assets\Scripts\HexCoordinates.cs" />
@@ -72,6 +73,22 @@
     <Compile Include="Assets\Scripts\HexMetrics.cs" />
     <Compile Include="Assets\Scripts\Ship.cs" />
     <Compile Include="Assets\Scripts\SpawnShips.cs" />
+=======
+    <Compile Include="Assets\Scripts\GalaxyScripts\FleetScripts\Fleet.cs" />
+    <Compile Include="Assets\Scripts\GalaxyScripts\FleetScripts\Ship.cs" />
+    <Compile Include="Assets\Scripts\GalaxyScripts\FleetScripts\ShipManager.cs" />
+    <Compile Include="Assets\Scripts\GalaxyScripts\GalaxyCell.cs" />
+    <Compile Include="Assets\Scripts\GalaxyScripts\GalaxyGrid.cs" />
+    <Compile Include="Assets\Scripts\GalaxyScripts\GalaxyManager.cs" />
+    <Compile Include="Assets\Scripts\General\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\General\HexCell.cs" />
+    <Compile Include="Assets\Scripts\General\HexCoordinates.cs" />
+    <Compile Include="Assets\Scripts\General\HexMesh.cs" />
+    <Compile Include="Assets\Scripts\General\HexMetrics.cs" />
+    <Compile Include="Assets\Scripts\PlanetScripts\PlanetCell.cs" />
+    <Compile Include="Assets\Scripts\PlanetScripts\PlanetGrid.cs" />
+    <Compile Include="Assets\Scripts\PlanetScripts\PlanetManager.cs" />
+>>>>>>> Stashed changes
     <None Include="Assets\Materials\VertexColors.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/New Unity Project (1)/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
