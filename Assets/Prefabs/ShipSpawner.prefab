@@ -43,5 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e763a90d6be8d144cbe564a8eebb27ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   fleetPrefab: {fileID: 4234405685718781552, guid: 85ad7e0d4f4e093429323c6ef4c84663,
+=======
+  shipPrefab: {fileID: 2004694373787742084, guid: 575278ee45e94374e8e14948fd9b1c71,
+>>>>>>> master
     type: 3}

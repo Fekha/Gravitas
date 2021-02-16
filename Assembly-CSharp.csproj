@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9191DA5E-C71D-79A5-AB48-D8BA5BE35EAA}</ProjectGuid>
+    <ProjectGuid>{E9F6A016-2E51-0BDE-BADE-0AF8BEBF4684}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -76,10 +76,20 @@
     <Compile Include="Assets\Scripts\General\HexMesh.cs" />
     <Compile Include="Assets\Scripts\General\HexMetrics.cs" />
     <Compile Include="Assets\Scripts\HexCell.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\PlanetScripts\PlanetCell.cs" />
     <Compile Include="Assets\Scripts\PlanetScripts\PlanetGrid.cs" />
     <Compile Include="Assets\Scripts\PlanetScripts\PlanetManager.cs" />
     <Compile Include="Assets\Scripts\SpawnShips.cs" />
+=======
+    <Compile Include="Assets\Scripts\HexCoordinates.cs" />
+    <Compile Include="Assets\Scripts\HexGrid.cs" />
+    <Compile Include="Assets\Scripts\HexMesh.cs" />
+    <Compile Include="Assets\Scripts\HexMetrics.cs" />
+    <Compile Include="Assets\Scripts\Manager.cs" />
+    <Compile Include="Assets\Scripts\Ship.cs" />
+    <Compile Include="Assets\Scripts\ShipManager.cs" />
+>>>>>>> master
     <None Include="Assets\Materials\VertexColors.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/17575/Documents/GitHub/Gravitas/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

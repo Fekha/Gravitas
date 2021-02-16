@@ -64,7 +64,12 @@ public struct HexCoordinates {
 
 		return new HexCoordinates(iX, iZ);
 	}
+	public int toCellIndex(int width)
+    {
 
+		return X + Y * width + Y / 2;
+
+	}
 	public override string ToString () {
 		return "(" + X.ToString() + ", " + Z.ToString() + ", " + Y.ToString() + ")";
 	}

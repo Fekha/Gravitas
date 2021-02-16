@@ -143,8 +143,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   width: 0
   height: 0
+<<<<<<< HEAD
   cellPrefab: {fileID: 8669638171583731982, guid: 4ded836ecffeb1940b8f3932c4dc19ab,
     type: 3}
+=======
+  cellPrefab: {fileID: 11422220, guid: 94c2312396697489abc866a188f80152, type: 3}
+>>>>>>> master
   cellLabelPrefab: {fileID: 11470134, guid: f68794ca03b6f4510b9a5bd6ee9ba2f4, type: 3}
   sprites:
   - {fileID: 21300000, guid: 4c3abf2bb82b6ee45ba6e7e807c5685e, type: 3}

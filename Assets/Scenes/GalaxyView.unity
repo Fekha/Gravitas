@@ -139,6 +139,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/GalaxyView.unity
 <<<<<<< Updated upstream
 --- !u!1 &319857720
 =======
@@ -296,6 +297,8 @@ Transform:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
+=======
+>>>>>>> master:Assets/Scenes/SampleScene.unity
 --- !u!1 &519420028
 =======
   m_GameObject: {fileID: 1519548181}
@@ -446,6 +449,7 @@ Transform:
 <<<<<<< Updated upstream
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:Assets/Scenes/GalaxyView.unity
 --- !u!1 &1018759371
 =======
   m_RootOrder: 1
@@ -593,6 +597,8 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1018759371}
   m_Mesh: {fileID: 0}
+=======
+>>>>>>> master:Assets/Scenes/SampleScene.unity
 --- !u!1 &1185407732
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,40 +689,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &1190412771
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1190412772}
-  - component: {fileID: 1190412775}
-  - component: {fileID: 1190412774}
-  - component: {fileID: 1190412773}
-  m_Layer: 0
-  m_Name: Hex Mesh
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1190412772
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1190412771}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1018759374}
   m_RootOrder: 1
+<<<<<<< HEAD:Assets/Scenes/GalaxyView.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1190412773
 =======
@@ -789,6 +763,9 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1190412771}
   m_Mesh: {fileID: 0}
+=======
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+>>>>>>> master:Assets/Scenes/SampleScene.unity
 --- !u!1 &1420771366
 =======
   m_GameObject: {fileID: 2080931911}
@@ -809,10 +786,8 @@ GameObject:
 <<<<<<< Updated upstream
   - component: {fileID: 1420771368}
   - component: {fileID: 1420771367}
-  - component: {fileID: 1420771371}
-  - component: {fileID: 1420771370}
-  - component: {fileID: 1420771369}
   m_Layer: 0
+<<<<<<< HEAD:Assets/Scenes/GalaxyView.unity
 <<<<<<< Updated upstream:Assets/Scenes/SampleScene.unity
   m_Name: ShipSpawner
 =======
@@ -825,6 +800,9 @@ GameObject:
 =======
   m_Name: GalaxyManager
 >>>>>>> Stashed changes:Assets/Scenes/GalaxyView.unity
+=======
+  m_Name: GameManager
+>>>>>>> master:Assets/Scenes/SampleScene.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -838,13 +816,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1420771366}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e763a90d6be8d144cbe564a8eebb27ca, type: 3}
+  m_Script: {fileID: 11500000, guid: ad42089612209594c8722ea3183e82d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shipPrefab: {fileID: 2004694373787742084, guid: 575278ee45e94374e8e14948fd9b1c71,
-    type: 3}
+  grid: {fileID: 2025351596}
+  ships: {fileID: 476904974183677769, guid: 03118853d3cc7654788190bb7adeb386, type: 3}
 --- !u!4 &1420771368
 =======
 --- !u!4 &2086026939
@@ -856,13 +834,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 1420771366}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.411409, y: 10.062552, z: -5.1992188}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:Assets/Scenes/GalaxyView.unity
 --- !u!114 &1420771369
 =======
   m_GameObject: {fileID: 2086026938}
@@ -876,17 +855,135 @@ Transform:
 --- !u!114 &2086026940
 >>>>>>> Stashed changes
 MonoBehaviour:
+=======
+--- !u!1001 &1723005802
+PrefabInstance:
+>>>>>>> master:Assets/Scenes/SampleScene.unity
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3890383355344826528, guid: 055edb9e77ce2ba42ae225f1f317a7c5,
+        type: 3}
+      propertyPath: cells.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3890383355344826528, guid: 055edb9e77ce2ba42ae225f1f317a7c5,
+        type: 3}
+      propertyPath: cells.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3890383355344826528, guid: 055edb9e77ce2ba42ae225f1f317a7c5,
+        type: 3}
+      propertyPath: cells.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3890383355344826528, guid: 055edb9e77ce2ba42ae225f1f317a7c5,
+        type: 3}
+      propertyPath: cells.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3890383355344826528, guid: 055edb9e77ce2ba42ae225f1f317a7c5,
+        type: 3}
+      propertyPath: cells.Array.data[4]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3890383355344826528, guid: 055edb9e77ce2ba42ae225f1f317a7c5,
+        type: 3}
+      propertyPath: cells.Array.data[5]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3890383355344826528, guid: 055edb9e77ce2ba42ae225f1f317a7c5,
+        type: 3}
+      propertyPath: cells.Array.data[6]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3890383355344826528, guid: 055edb9e77ce2ba42ae225f1f317a7c5,
+        type: 3}
+      propertyPath: cells.Array.data[7]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3890383355344826530, guid: 055edb9e77ce2ba42ae225f1f317a7c5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3890383355344826530, guid: 055edb9e77ce2ba42ae225f1f317a7c5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3890383355344826530, guid: 055edb9e77ce2ba42ae225f1f317a7c5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3890383355344826530, guid: 055edb9e77ce2ba42ae225f1f317a7c5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3890383355344826530, guid: 055edb9e77ce2ba42ae225f1f317a7c5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3890383355344826530, guid: 055edb9e77ce2ba42ae225f1f317a7c5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3890383355344826530, guid: 055edb9e77ce2ba42ae225f1f317a7c5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3890383355344826530, guid: 055edb9e77ce2ba42ae225f1f317a7c5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3890383355344826530, guid: 055edb9e77ce2ba42ae225f1f317a7c5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3890383355344826530, guid: 055edb9e77ce2ba42ae225f1f317a7c5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3890383355344826530, guid: 055edb9e77ce2ba42ae225f1f317a7c5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3890383355344826535, guid: 055edb9e77ce2ba42ae225f1f317a7c5,
+        type: 3}
+      propertyPath: m_Name
+      value: Grid
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 055edb9e77ce2ba42ae225f1f317a7c5, type: 3}
+--- !u!114 &2025351596 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3890383355344826528, guid: 055edb9e77ce2ba42ae225f1f317a7c5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1723005802}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD:Assets/Scenes/GalaxyView.unity
 <<<<<<< Updated upstream
   m_GameObject: {fileID: 1420771366}
+=======
+  m_GameObject: {fileID: 0}
+>>>>>>> master:Assets/Scenes/SampleScene.unity
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c547250cafb924e6397c4c850c04fe5f, type: 3}
+  m_Script: {fileID: 11500000, guid: 414a0fc06528949a0baff4f719b04a4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD:Assets/Scenes/GalaxyView.unity
 --- !u!23 &1420771370
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -942,3 +1039,5 @@ MeshFilter:
   m_Name: 
   m_EditorClassIdentifier: 
 >>>>>>> Stashed changes
+=======
+>>>>>>> master:Assets/Scenes/SampleScene.unity
