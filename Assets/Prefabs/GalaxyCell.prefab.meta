@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream:Assets/Prefabs/GalaxyCell.prefab.meta
 guid: 4ded836ecffeb1940b8f3932c4dc19ab
+=======
+guid: 85ad7e0d4f4e093429323c6ef4c84663
+>>>>>>> Stashed changes:Assets/Prefabs/FleetPrefab.prefab.meta
+=======
+guid: 4ded836ecffeb1940b8f3932c4dc19ab
+>>>>>>> Stashed changes
 PrefabImporter:
   externalObjects: {}
   userData: 

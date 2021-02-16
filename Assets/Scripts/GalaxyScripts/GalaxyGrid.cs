@@ -5,43 +5,23 @@ using UnityEngine.UI;
 
 public class GalaxyGrid : MonoBehaviour {
 
-<<<<<<< Updated upstream:Assets/Scripts/HexGrid.cs
-	int width;
-	int height;
-=======
 	public int width;
 	public int height;
 	public int size;
->>>>>>> Stashed changes:Assets/Scripts/GalaxyScripts/GalaxyGrid.cs
 
-	public Color defaultColor = Color.white;
-	public Color touchedColor = Color.magenta;
+	private Color defaultColor = Color.black;
 
 	public GalaxyCell cellPrefab;
 	public Text cellLabelPrefab;
 
 	public List<Sprite> sprites;
 
-<<<<<<< Updated upstream:Assets/Scripts/HexGrid.cs
-	HexCell[] cells;
-=======
 	public GalaxyCell[] cells;
->>>>>>> Stashed changes:Assets/Scripts/GalaxyScripts/GalaxyGrid.cs
 
 	Canvas gridCanvas;
-	HexMesh hexMesh;
-
-	void Awake () {
+	public void CreateGrid()
+    {
 		gridCanvas = GetComponentInChildren<Canvas>();
-<<<<<<< Updated upstream:Assets/Scripts/HexGrid.cs
-		hexMesh = GetComponentInChildren<HexMesh>();
-		width = Random.Range(2, 8);
-		height = Random.Range(2, 8);
-		cells = new HexCell[height * width];
-
-		for (int y = 0, i = 0; y < height; y++) {
-			for (int x = 0; x < width; x++) {
-=======
 		//var size = UnityEngine.Random.Range(2, 8);
 		//size always needs to be odd
 		size = 5;
@@ -54,38 +34,12 @@ public class GalaxyGrid : MonoBehaviour {
 			//var range = width - Mathf.Max((size / 2) - y, y - size / 2);
 			for (int x = 0; x < width; x++)
 			{
->>>>>>> Stashed changes:Assets/Scripts/GalaxyScripts/GalaxyGrid.cs
 				CreateCell(x, y, i++);
 				//range - (int)Math.Ceiling((double)(size / 2))
 			}
 		}
-	}
 
-	void Start () {
-		hexMesh.Triangulate(cells);
-	}
-
-	void Update () {
-		if (Input.GetMouseButton(0)) {
-			HandleInput();
-		}
-	}
-
-	void HandleInput () {
-		Ray inputRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-		RaycastHit hit;
-		if (Physics.Raycast(inputRay, out hit)) {
-			TouchCell(hit.point);
-		}
-	}
-
-	void TouchCell (Vector3 position) {
-		position = transform.TransformPoint(position);
-		HexCoordinates coordinates = HexCoordinates.FromPosition(position);
-		int index = coordinates.X + coordinates.Y * width + coordinates.Y / 2;
-		HexCell cell = cells[index];
-		cell.color = touchedColor;
-		hexMesh.Triangulate(cells);
+		UpdateBoard();
 	}
 
 	void CreateCell (int x, int y, int i) {
@@ -109,4 +63,10 @@ public class GalaxyGrid : MonoBehaviour {
         label.rectTransform.anchoredPosition = new Vector2(position.x, position.y);
         label.text = cell.coordinates.ToStringOnSeparateLines();
     }
+
+    public void UpdateBoard()
+    {
+		HexMesh hexMesh = GetComponentInChildren<HexMesh>();
+		hexMesh.Triangulate(cells);
+	}
 }

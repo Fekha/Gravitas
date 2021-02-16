@@ -366,7 +366,15 @@ GameObject:
   - component: {fileID: 2086026939}
   - component: {fileID: 2086026940}
   m_Layer: 0
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream:Assets/Scenes/PlanetView.unity
   m_Name: PlanetManager
+=======
+  m_Name: GalaxyManager
+>>>>>>> Stashed changes:Assets/Scenes/GalaxyView.unity
+=======
+  m_Name: PlanetManager
+>>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
