@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlanetCell : HexCell
+public class PlanetGrid : HexGrid
 {
 
 }

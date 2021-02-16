@@ -62,9 +62,7 @@ public struct HexCoordinates {
 	}
 	public int toCellIndex(int width)
     {
-
 		return X + Y * width + Y / 2;
-
 	}
 	public override string ToString () {
 		return "(" +
