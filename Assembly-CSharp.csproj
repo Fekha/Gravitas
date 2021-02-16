@@ -64,17 +64,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\GalaxyScripts\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\GalaxyScripts\FleetScripts\Fleet.cs" />
+    <Compile Include="Assets\Scripts\GalaxyScripts\FleetScripts\FleetManager.cs" />
+    <Compile Include="Assets\Scripts\GalaxyScripts\FleetScripts\Ship.cs" />
     <Compile Include="Assets\Scripts\GalaxyScripts\GalaxyCell.cs" />
+    <Compile Include="Assets\Scripts\GalaxyScripts\GalaxyGrid.cs" />
+    <Compile Include="Assets\Scripts\GalaxyScripts\GalaxyManager.cs" />
+    <Compile Include="Assets\Scripts\GeneralScripts\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\GeneralScripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\GeneralScripts\HexCell.cs" />
     <Compile Include="Assets\Scripts\GeneralScripts\HexCoordinates.cs" />
-    <Compile Include="Assets\Scripts\HexGrid.cs" />
-    <Compile Include="Assets\Scripts\HexMesh.cs" />
-    <Compile Include="Assets\Scripts\HexMetrics.cs" />
-    <Compile Include="Assets\Scripts\Manager.cs" />
+    <Compile Include="Assets\Scripts\GeneralScripts\HexGrid.cs" />
+    <Compile Include="Assets\Scripts\GeneralScripts\HexMesh.cs" />
+    <Compile Include="Assets\Scripts\GeneralScripts\HexMetrics.cs" />
     <Compile Include="Assets\Scripts\PlanetScripts\PlanetCell.cs" />
-    <Compile Include="Assets\Scripts\Ship.cs" />
-    <Compile Include="Assets\Scripts\ShipManager.cs" />
+    <Compile Include="Assets\Scripts\PlanetScripts\PlanetGrid.cs" />
+    <Compile Include="Assets\Scripts\PlanetScripts\PlanetManager.cs" />
     <None Include="Assets\Materials\VertexColors.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/17575/Documents/GitHub/Gravitas/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Ship : MonoBehaviour
 {
-	public HexCoordinates coordinates;
-
-	public Color teamColor;
+	public int health = 5;
+	public int speed = 5;
+	public int damage = 2;
+	public int defense = 2;
 }

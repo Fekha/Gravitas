@@ -4,8 +4,8 @@ using UnityEngine.UI;
 
 public class HexGrid : MonoBehaviour {
 
-	public int width;
-	public int height;
+	public int width = 5;
+	public int height = 5;
 
 	private Color defaultColor = Color.black;
 
@@ -21,8 +21,6 @@ public class HexGrid : MonoBehaviour {
     {
 		gridCanvas = GetComponentInChildren<Canvas>();
 		
-		width = Random.Range(2, 8);
-		height = Random.Range(2, 8);
 		cells = new HexCell[height * width];
 
 		for (int y = 0, i = 0; y < height; y++)

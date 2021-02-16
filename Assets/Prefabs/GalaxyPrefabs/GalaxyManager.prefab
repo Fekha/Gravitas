@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7457943226838236595
+--- !u!1 &9006138468162868962
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2053876981623651250}
-  - component: {fileID: 476904974183677769}
+  - component: {fileID: 8877469480035301045}
+  - component: {fileID: 1213977156866772533}
   m_Layer: 0
-  m_Name: ShipSpawner
+  m_Name: GalaxyManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2053876981623651250
+--- !u!4 &8877469480035301045
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7457943226838236595}
+  m_GameObject: {fileID: 9006138468162868962}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 177.5812, y: -103.0341, z: 111.06}
+  m_LocalPosition: {x: 33.082924, y: 3.0582552, z: -4.8146667}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &476904974183677769
+--- !u!114 &1213977156866772533
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7457943226838236595}
-  m_Enabled: 0
+  m_GameObject: {fileID: 9006138468162868962}
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e763a90d6be8d144cbe564a8eebb27ca, type: 3}
+  m_Script: {fileID: 11500000, guid: e1328c442670a1940920b560554804b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shipPrefab: {fileID: 2004694373787742084, guid: 575278ee45e94374e8e14948fd9b1c71,
+  grid: {fileID: 3375116387888640148, guid: 96ec461f80b225948945fa0663b76fd6, type: 3}
+  fleetManager: {fileID: 254151167964991460, guid: 70e4fac2051a6824a822f2edcd0614e4,
     type: 3}

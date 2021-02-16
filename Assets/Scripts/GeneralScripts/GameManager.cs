@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Manager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
 	public HexGrid grid;
 
-	public ShipManager ships;
+	public FleetManager fleetManager;
 
-	private Ship selectedShip;
+	private Fleet selectedFleet;
 	private HexCell selectedCell;
 
 
@@ -16,11 +16,11 @@ public class Manager : MonoBehaviour
 	{
 		grid.CreateGrid();
 
-		ships.Setup(grid);
+		fleetManager.Setup(grid);
 	}
 	void Update()
 	{
-		if (Input.GetMouseButton(0))
+		if (Input.GetMouseButtonUp(0))
 		{
 			HandleInput();
 		}
@@ -38,30 +38,29 @@ public class Manager : MonoBehaviour
 
     private IEnumerator TouchCell(Vector3 position)
 	{
-		//forgive me for this exo, ill clean it all up tomorrow :) 
-
 		position = transform.TransformPoint(position);
 		HexCoordinates coordinates = HexCoordinates.FromPosition(position);
 		int index = coordinates.toCellIndex(grid.width);
 		HexCell cell = grid.cells[index];
 
-		if (selectedShip != null)
+		if (selectedFleet != null)
 		{
-			selectedShip.transform.localPosition = cell.transform.localPosition;
+			selectedFleet.transform.localPosition = cell.transform.localPosition;
 
-			selectedCell.Occupiedby = null;
+			
+			selectedCell.ObjectsOnHex.RemoveAt(0);//temp
 			selectedCell.color = Color.black;
-			cell.Occupiedby = selectedShip;
+			cell.ObjectsOnHex.Add(selectedFleet.FleetId);
 
 			selectedCell = null;
-			selectedShip = null;		
+			selectedFleet = null;
 		}
 		else
 		{
-			if (cell.Occupiedby != null)
+			if (cell.ObjectsOnHex.Count > 0)
 			{
 				cell.color = Color.blue;
-				selectedShip = cell.Occupiedby;
+				selectedFleet = fleetManager.GetFleetbyId(cell.ObjectsOnHex[0]);//temp
 				selectedCell = cell;
             }
             else

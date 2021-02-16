@@ -2,17 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GalaxyCell : MonoBehaviour
+public class GalaxyCell : HexCell
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //not really needed but temporary for test
+   public bool HasStar = false;
 }
