@@ -12,4 +12,15 @@ public class Fleet : MonoBehaviour
     public Color teamColor;
 
     public List<Ship> ships;
+
+    private int actionPoints;
+
+    public int getAP()
+    {
+        return actionPoints;
+    }
+    public int setAP(int i)
+    {
+        return actionPoints + i;
+    }
 }
